@@ -1,7 +1,8 @@
-from flask import Flask, request
+import oі
+from flask import Flask, request, Response
 
 messages = []
-
+ADMIN_PASSWORD = os.environ.get("ADMIN_PASSWORD")
 app = Flask(__name__)
 
 @app.route("/", methods=["GET", "POST"])
@@ -267,3 +268,48 @@ def home():
 </body>
 </html>
 """
+@app.route("/admin")
+def admin():
+    auth = request.authorization
+
+    if not auth or auth.password != ADMIN_PASSWORD:
+        return Response(
+            "Login required",
+            401,
+            {"WWW-Authenticate": 'Basic realm="Admin"'}
+        )
+
+    html = """
+    <html>
+    <head>
+        <title>Messages</title>
+        <style>
+            body {
+                background: #111;
+                color: white;
+                font-family: "Segoe UI", Arial, sans-serif;
+                padding: 30px;
+            }
+
+            .message {
+                background: #24292f;
+                padding: 15px;
+                border-radius: 10px;
+                margin-bottom: 12px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Messages</h1>
+    """
+
+    for item in messages:
+        html += f'''
+        <div class="message">
+            <b>{item["username"]}</b><br>
+            {item["message"]}
+        </div>
+        '''
+
+    html += "</body></html>"
+    return html
