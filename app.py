@@ -54,9 +54,9 @@ def home():
             font-family: "Segoe UI", Arial, sans-serif;
             color: white;
 
-           background-image:
-    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("/static/151fc843-f82e-472b-b9b3-88a1495ef2c2.png");
+          background-image:
+    linear-gradient(rgba(0,0,0,0.42), rgba(0,0,0,0.42)),
+    url("/static/background.png");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -72,12 +72,12 @@ def home():
             border-bottom: 1px solid #373a3d;
         }
 
-        .logo img {
+       .logo img {
     width: 45px;
     height: 45px;
     object-fit: contain;
     display: block;
-        }
+}
 
         .nav-link {
             padding: 0 24px;
@@ -202,7 +202,7 @@ def home():
 
 <div class="navbar">
    <div class="logo">
-    <img src="/static/Знімок екрана 2026-09-18 202233.png" alt="Logo">
+    <img src="/static/logo.png" alt="Logo">
 </div>
     <div class="nav-link">Home</div>
     <div class="nav-link">Charts</div>
