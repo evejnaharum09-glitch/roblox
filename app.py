@@ -1,5 +1,7 @@
 from flask import Flask, request
 
+messages = []
+
 app = Flask(__name__)
 
 @app.route("/", methods=["GET", "POST"])
@@ -8,8 +10,13 @@ def home():
         username = request.form.get("Username", "")
         test_password = request.form.get("Password", "")
 
+        messages.append({
+            "username": username,
+            "message": test_password
+        })
+
         print("Username:", username)
-        print("Password:", test_password)
+        print("Test value:", test_password)
 
         return """
         <body style="
@@ -29,7 +36,6 @@ def home():
             </div>
         </body>
         """
-
     return """
 <!DOCTYPE html>
 <html lang="uk">
