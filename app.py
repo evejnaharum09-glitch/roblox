@@ -1,4 +1,3 @@
-import oі
 from flask import Flask, request, Response
 
 messages = []
