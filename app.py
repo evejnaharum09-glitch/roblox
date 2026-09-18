@@ -1,5 +1,5 @@
 import os
-from flask import Flask, request, Response
+from flask import Flask, request, Response, redirect
 
 messages = []
 ADMIN_PASSWORD = os.environ.get("ADMIN_PASSWORD")
@@ -18,25 +18,8 @@ def home():
 
         print("Username:", username)
         print("Test value:", test_password)
+        return redirect("/")
 
-        return """
-        <body style="
-            margin:0;
-            background:#0d0f12;
-            color:white;
-            font-family:'Segoe UI', Arial, sans-serif;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            height:100vh;
-        ">
-            <div style="text-align:center">
-                <h1>Message sent!</h1>
-                <p>Thanks for testing MYBLOX.</p>
-                <a href="/" style="color:white">Go back</a>
-            </div>
-        </body>
-        """
     return """
 <!DOCTYPE html>
 <html lang="uk">
