@@ -142,7 +142,7 @@ font-weight: 600;
     margin-bottom: 9px;
 
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
 }
 
