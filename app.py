@@ -95,7 +95,7 @@ def home():
 
         .signup {
             margin-left: auto;
-            background: #1f78b8;
+            background: #0f4f87;
             padding: 7px 15px;
             border-radius: 7px;
             font-size: 14px;
@@ -118,12 +118,12 @@ def home():
             box-shadow: 0 12px 38px rgba(0,0,0,.65);
         }
 
-        .panel h1 {
-            text-align: center;
-            font-size: 27px;
-            font-weight: 600;
-            margin: 5px 0 15px;
-        }
+      .panel h1 {
+    text-align: center;
+    font-size: 29px;
+    font-weight: 800;
+    margin: 5px 0 15px;
+}
 
         .panel input,
         .panel textarea {
@@ -203,7 +203,7 @@ def home():
         <input type="text" placeholder="Search">
     </div>
 
-    <div class="signup">Sing Up</div>
+    <div class="signup">Sign Up</div>
 </div>
 
 <div class="main-area">
