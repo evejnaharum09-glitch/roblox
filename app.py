@@ -203,7 +203,7 @@ def home():
         <input type="text" placeholder="Search">
     </div>
 
-    <div class="signup">Join</div>
+    <div class="signup">Sing Up</div>
 </div>
 
 <div class="main-area">
