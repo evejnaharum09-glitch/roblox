@@ -126,7 +126,7 @@ font-weight: 600;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 32px;
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: -0.6px;
     margin: 5px 0 15px;
 }
