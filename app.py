@@ -41,7 +41,8 @@ def home():
 
         body {
             min-height: 100vh;
-            font-family: "Segoe UI", Arial, sans-serif;
+           font-family: Arial, Helvetica, sans-serif;
+font-weight: 600;
             color: white;
 
           background-image:
@@ -69,13 +70,12 @@ def home():
     display: block;
 }
 
-        .nav-link {
-            padding: 0 24px;
-            font-size: 15px;
-            font-weight: 600;
-            color: #f2f2f2;
-        }
-
+      .nav-link {
+    padding: 0 24px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #f2f2f2;
+}
         .search {
             flex: 1;
             max-width: 470px;
@@ -83,25 +83,29 @@ def home():
         }
 
         .search input {
-            width: 100%;
-            height: 31px;
-            background: #23262a;
-            border: 1px solid #666b70;
-            border-radius: 7px;
-            padding: 0 12px;
-            color: white;
-            font-size: 14px;
-        }
+    width: 100%;
+    height: 31px;
+    background: #23262a;
+    border: 1px solid #666b70;
+    border-radius: 7px;
+    padding: 0 12px;
+    color: white;
 
-        .signup {
-            margin-left: auto;
-            background: #0f4f87;
-            padding: 7px 15px;
-            border-radius: 7px;
-            font-size: 14px;
-            font-weight: 600;
-        }
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+}
 
+.signup {
+    margin-left: auto;
+    background: #0f4f87;
+    padding: 7px 15px;
+    border-radius: 7px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
         .main-area {
             min-height: calc(100vh - 48px);
             display: flex;
@@ -118,66 +122,84 @@ def home():
             box-shadow: 0 12px 38px rgba(0,0,0,.65);
         }
 
-      .panel h1 {
+     .panel h1 {
     text-align: center;
-    font-size: 29px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
     font-weight: 800;
+    letter-spacing: -0.6px;
     margin: 5px 0 15px;
 }
 
-        .panel input,
-        .panel textarea {
-            width: 100%;
-            background: #343a40;
-            color: white;
-            border: 1px solid #8f989f;
-            border-radius: 7px;
-            padding: 10px;
-            margin-bottom: 9px;
-            font-size: 14px;
-            font-family: "Segoe UI", Arial, sans-serif;
-        }
+       .panel input,
+.panel textarea {
+    width: 100%;
+    background: #343a40;
+    color: white;
+    border: 1px solid #8f989f;
+    border-radius: 7px;
+    padding: 10px;
+    margin-bottom: 9px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
 
         .panel textarea {
             height: 70px;
             resize: none;
         }
 
-        .main-button {
-            width: 100%;
-            height: 37px;
-            background: transparent;
-            color: white;
-            border: 1px solid #e7e7e7;
-            border-radius: 7px;
-            font-size: 14px;
-            font-weight: 600;
-            cursor: pointer;
-        }
+.main-button {
+    width: 100%;
+    height: 37px;
+    background: transparent;
+    color: white;
+    border: 1px solid #e7e7e7;
+    border-radius: 7px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
 
         .helper {
-            text-align: center;
-            margin-top: 18px;
-            font-size: 14px;
-            font-weight: 600;
-        }
+    text-align: center;
+    margin-top: 18px;
+    font-size: 15px;
+    font-weight: 700;
+}
 
+.footer-text {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 15px;
+    color: #d3d7da;
+}
         .separator {
             border: 0;
             border-top: 1px solid #5d656d;
             margin: 23px 0 15px;
         }
 
-        .secondary {
-            width: 100%;
-            background: #454d55;
-            color: white;
-            padding: 9px;
-            border: 0;
-            border-radius: 7px;
-            font-weight: 600;
-            margin-bottom: 9px;
-        }
+       .secondary {
+    width: 100%;
+    background: #454d55;
+    color: white;
+    padding: 9px;
+    border: 0;
+    border-radius: 7px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+
+    margin-bottom: 9px;
+}
 
         .footer-text {
             text-align: center;
